@@ -231,8 +231,6 @@ tbody tr:nth-child(even) {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-self: flex-start;
-    justify-self: flex-start;
     margin: auto;
 }
 
@@ -241,6 +239,8 @@ tbody tr:nth-child(even) {
     height: auto;
     border: 2px solid var(--gray);
     box-sizing: border-box;
+    align-self: flex-start;
+    justify-self: flex-start;
 }
 
 .content-hidden {

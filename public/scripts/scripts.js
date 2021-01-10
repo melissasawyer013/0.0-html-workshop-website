@@ -23,7 +23,7 @@ for (let i = 0; i < coll.length; i++) {
 //     })
 // }
 
-let div_to_show = document.getElementsByClassName("quiz-hidden");
+let div_to_show = document.getElementsByClassName("container-quiz-hidden");
 let prompt_button = document.getElementsByClassName("show-quiz-js");
 
 function checkPassword() {

@@ -13,7 +13,6 @@ body {
     overflow-x: hidden;
     font-size: max(1.4rem, 1.1rem);
     background-color: var(--grey);
-    
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -38,7 +37,7 @@ nav img {
 }
 
 .container-day-content {
-    width: 70%;
+    width: 85%;
     background-color: var(--white);
     margin: 3em 0 0 0;
     padding: 1em 3em 2em 3em;
@@ -46,6 +45,7 @@ nav img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .container-text-align-left {
@@ -101,16 +101,16 @@ nav img {
     width: 50px;
     height: 50px;
     font-size: 20pt;
-    vertical-align: middle;
     border: none;
-    text-align: center;
-    align-items: center;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-content-hidden {
     width: 80%;
-    border: 2px var(--red) solid;
+    border: 3px var(--red) solid;
     border-top: none;
     display: none;
     margin: 0 .5em .5em .5em;
@@ -264,30 +264,16 @@ a {
     padding-right: 0;
 }
 
-.show-quiz-js {
-    background-color: var(--red);
-    color: var(--white);
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    font-size: 20pt;
-    vertical-align: middle;
-    border: none;
-    text-align: center;
-    align-items: center;
-    outline: none;
-}
-
-.quiz-hidden {
+.container-quiz-hidden {
     width: 80%;
-    border: 2px var(--red) solid;
+    border: 3px var(--red) solid;
     border-top: none;
     display: none;
     margin: 0 .5em .5em .5em;
     box-sizing: border-box; 
 }
 
-.quiz-hidden h4 { 
+.container-quiz-hidden h4 { 
     text-align: center;
 }
 
@@ -317,3 +303,140 @@ footer img {
     align-self: flex-end;
 }
 
+@viewport {
+    width: device-width;
+    zoom: 1.0 ;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@media only screen and (min-width:100px) and (max-width: 480px) {
+    .container-day-content {
+        width: 95%;
+        padding: 1em;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .container-content-displayed {
+        width: 99%;
+    }
+
+    .container-content-displayed-title {
+        padding: .5em;
+        width: 75%;
+        font-size: .8em;
+        text-align: left;
+    }
+
+    .container-content-displayed-button {
+        width: 25%;
+    }
+
+    .button-show-more {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container-content-hidden {
+        width: 99%;
+    }
+
+    iframe {
+        height: auto;
+    }
+
+    .container-quiz-hidden {
+        width: 99%;
+    }
+
+}
+
+@media only screen and (min-width:481px) and (max-width: 870px) {
+    .container-day-content {
+        width: 90%;
+        padding: 1em;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .container-content-displayed {
+        width: 90%;
+    }
+
+    .container-content-displayed-title {
+        padding: .5em;
+        width: 75%;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .button-show-more {
+        width: 40px;
+        height: 40px;
+    }
+
+    .container-content-hidden {
+        width: 90%;
+    }
+
+    iframe {
+        height: 90vh;
+    }
+
+    .container-quiz-hidden {
+        width: 90%;
+    } 
+}
+
+@media only screen and (min-width:1441px) and (max-width: 1600px){
+    body {
+        font-size: max(2rem, 1.8rem);
+    }
+
+    nav img {
+        max-width: 25%;
+    }
+
+    footer img {
+        max-width: 25%;
+    }
+}
+
+@media only screen and (min-width:1601px) and (max-width: 1800px){
+    body {
+        font-size: max(2.5rem, 1.8rem);
+    }
+
+    nav img {
+        max-width: 25%;
+    }
+
+    footer img {
+        max-width: 25%;
+    }
+}
+
+@media only screen and (min-width:1801px) {
+    body {
+        font-size: max(3rem, 1.8rem);
+    }
+
+    nav img {
+        max-width: 40%;
+        width: 40%;
+    }
+
+    footer img {
+        max-width: 40%;
+        width: 40%;
+    }
+}

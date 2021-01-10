@@ -106,6 +106,7 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .container-content-hidden {
@@ -341,6 +342,7 @@ footer img {
     .button-show-more {
         width: 30px;
         height: 30px;
+        font-size: 12pt;
     }
 
     .container-content-hidden {

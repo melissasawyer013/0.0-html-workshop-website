@@ -231,7 +231,8 @@ tbody tr:nth-child(even) {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-self: flex-start;
+    justify-self: flex-start;
     margin: auto;
 }
 
